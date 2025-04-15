@@ -108,7 +108,7 @@ class WindowManager:
 
         # initial call required to manipulate later
         # https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-showwindow
-        show_window(window.hwnd, SW_SHOWNORMAL)
+        # show_window(window.hwnd, SW_SHOWNORMAL)
 
 
     def get_window_info(self) -> WindowInfo:
@@ -119,19 +119,12 @@ class WindowManager:
         if result == 0:
             _raiseWithLastError()
 
-        print(rect.left)
-        print(rect.top)
-        print(rect.right)
-        print(rect.bottom)
-
-        print(window.name)
-
-        maximised = winuser.IsZoomed(window.hwnd)
+        # maximised = winuser.IsZoomed(window.hwnd)
 
         return WindowInfo(
                 Point(rect.left, rect.top),
                 Point(rect.right, rect.bottom))
-#                 maximised)
+                # maximised)
 
 
     def set_window_info(self, window_info: WindowInfo):
@@ -166,7 +159,6 @@ class WindowManager:
             _raiseWithLastError()
 
         # show_window(window.hwnd, SW_SHOWNORMAL)
-
 
 
 if __name__ == "__main__":
