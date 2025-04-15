@@ -27,7 +27,8 @@ A window should now open with instructions at the top, follow them step-by-step 
 1. Click in the middle of one of the letters in 'Fish!'
 
 ![Image](https://github.com/user-attachments/assets/f9694f33-18fe-4ed9-b0df-59dc2b26318b)
-3. Click on the top of the blue fishing box
+
+2. Click on the top of the blue fishing box
 
 ![Image](https://github.com/user-attachments/assets/4b37001f-a038-404c-a222-ef9916ca7965)
 
